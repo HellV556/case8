@@ -98,7 +98,7 @@ class RestaurantApp(QWidget):
         for item in self.order_items:
             total += item['price'] * item['quantity']
 
-        message = f"Заказ принят!\nИтого: {total:.2f}\nСпасибо за заказ!"
+        message = f"Заказ принят!!!!\nИтого: {total:.2f}\nСпасибо за заказ!"
         QMessageBox.information(self, "Заказ завершен", message)
 
         # Очищаем заказ после завершения
